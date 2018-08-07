@@ -1,13 +1,19 @@
-# innovart_untref_critica
-
-Tecnología, mediación cultural y robótica en espacios culturales: una perspectiva
-crítica
+# Proyectos de Investigación 2018-2020 UNTREF: 
+# Tecnología, mediación cultural y robótica en espacios culturales: una perspectiva crítica
 
 Departamento / Instituto Laboratorio de Arte Electrónico e Inteligencia Artificial
 
 Responsable​ ​del​ ​Proyecto: Director: Miguel​ ​Grassi
+Integrandes: 
+Guzmán Cerdio, Mario Alberto
+Ramos Anzorena, Agustín
+Guersenzvaig, Paula Valeria
+León Sarmiento, Juán Camilo
+Casamadrid Iglesias, Laura Constanza
+Lombard, Mariana
+Molina Pacalagua, Luis Carlos
 
-Resumen:
+# Resumen:
 El proyecto pretende analizar el vínculo contemporáneo entre público y espacios
 expositivos (museos, galerías, centros culturales, etc) mediado por la tecnología. Se
 plantea entonces un análisis de este vínculo a partir de un estudio de campo y
@@ -18,7 +24,7 @@ dentro del marco del proyecto internacional INNOVART, ya aprobado y en curso.
 
 Componentes utilizados para un primer prototipo:
 
-- ESP32Dev Board
+# ESP32Dev Board
 https://github.com/espressif/arduino-esp32
 
 ESP32Dev Board PINMAP
@@ -29,7 +35,7 @@ https://github.com/espressif/arduino-esp32/raw/master/docs/esp32_pinmap.png
 Hint
 Sometimes to program ESP32 via serial you must keep GPIO0 LOW during the programming process
 
-- NeoPixel Ring - 16 x 5050 RGB LED with Integrated Drivers
+# NeoPixel Ring - 16 x 5050 RGB LED with Integrated Drivers
 https://www.adafruit.com/product/1463
 
 NeoPixel LEDs use 800 KHz protocol so specific timing is required. On NeoPixels, the PWM rate is ~400 Hz, which works well but is noticable if the LED is moving.
@@ -44,12 +50,12 @@ Please note you will need a NeoPixel library with RGBW support which is not alwa
 
 Time: NeoPixels process data from the host microcontroller at a fixed data rate; more pixels = more time and lower animation frame rates.
 
-- OLED I2C 128 x 64 (SH1106)
+# OLED I2C 128 x 64 (SH1106)
 https://github.com/ThingPulse/esp8266-oled-ssd1306
 
 ----------------------
 
-Libraries used:
+# Libraries used:
 - ESP32
    Adafruit_ESP8266
 - Pixel LED
