@@ -22,9 +22,9 @@ crítico e informado de recursos tecnológicos. El proyecto pretende hacer dispo
 investigación a diversos agentes de la cultura e implementar directamente sus resultados
 dentro del marco del proyecto internacional INNOVART, ya aprobado y en curso.
 
-Componentes utilizados para un primer prototipo:
+# Componentes utilizados para un primer prototipo:
 
-# ESP32Dev Board
+- ESP32Dev Board
 https://github.com/espressif/arduino-esp32
 
 ESP32Dev Board PINMAP
@@ -35,7 +35,7 @@ https://github.com/espressif/arduino-esp32/raw/master/docs/esp32_pinmap.png
 Hint
 Sometimes to program ESP32 via serial you must keep GPIO0 LOW during the programming process
 
-# NeoPixel Ring - 16 x 5050 RGB LED with Integrated Drivers
+- NeoPixel Ring - 16 x 5050 RGB LED with Integrated Drivers
 https://www.adafruit.com/product/1463
 
 NeoPixel LEDs use 800 KHz protocol so specific timing is required. On NeoPixels, the PWM rate is ~400 Hz, which works well but is noticable if the LED is moving.
@@ -50,7 +50,7 @@ Please note you will need a NeoPixel library with RGBW support which is not alwa
 
 Time: NeoPixels process data from the host microcontroller at a fixed data rate; more pixels = more time and lower animation frame rates.
 
-# OLED I2C 128 x 64 (SH1106)
+- OLED I2C 128 x 64 (SH1106)
 https://github.com/ThingPulse/esp8266-oled-ssd1306
 
 ----------------------
