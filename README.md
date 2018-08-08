@@ -1,13 +1,11 @@
 # Proyectos de Investigación 2018-2020 UNTREF: 
 # Tecnología, mediación cultural y robótica en espacios culturales: una perspectiva crítica
 
-Departamento / Instituto Laboratorio de Arte Electrónico e Inteligencia Artificial
+Instituto Laboratorio de Arte Electrónico e Inteligencia Artificial
 
-Responsable​ ​del​ ​Proyecto: Director: Miguel​ ​Grassi
+Responsable​ ​del​ ​Proyecto: Miguel​ ​Grassi
 
-Integrantes: 
-
-Mario Alberto Guzmán Cerdio,
+Integrantes: Mario Alberto Guzmán Cerdio,
 Agustín Ramos Anzorena,
 Paula Valeria Guersenzvaig,
 Juán Camilo León Sarmiento,
