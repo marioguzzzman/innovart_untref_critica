@@ -1,4 +1,4 @@
-# Proyectos de Investigación 2018-2020 UNTREF: 
+# Proyectos de Investigación 2018-2020 UNTREF:
 # Tecnología, mediación cultural y robótica en espacios culturales: una perspectiva crítica
 
 Instituto Laboratorio de Arte Electrónico e Inteligencia Artificial
@@ -35,10 +35,18 @@ Pin Functions
 #### Hint
 Sometimes to program ESP32 via serial you must keep GPIO0 LOW during the programming process
 
+---
+#### Configuracion de Arduino IDE para cargar/programar el ESP32
+* Board: ESP32 Dev Module
+* Programmer: AVRISP mkII
+* Port: MacOS => xxxxxx.SLAB_USBtoUART
+
+---
+
 ### NeoPixel Ring - 16 x 5050 RGB LED with Integrated Drivers
 https://www.adafruit.com/product/1463
 
-#### Notes: 
+#### Notes:
 NeoPixel LEDs use 800 KHz protocol so specific timing is required. On NeoPixels, the PWM rate is ~400 Hz, which works well but is noticable if the LED is moving.
 
 Please note you will need a NeoPixel library with RGBW support which is not always available. If you try to control these with a plain 'RGB' NeoPixel library, you'll get very weird results. Our Adafruit NeoPixel library does support RGBW but if you're using something else, just be aware that it might require some hacking.
@@ -64,7 +72,3 @@ https://github.com/ThingPulse/esp8266-oled-ssd1306
     NeoPixelBus_by_Makuna (Funciona con ESP32)
 - OLED I2C
     ESP8266_and_ESP32_Oled_Driver_for_SSD1306_display-4.0.0
-    
- 
-
-
