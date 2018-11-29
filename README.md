@@ -59,8 +59,42 @@ Please note you will need a NeoPixel library with RGBW support which is not alwa
 
 Time: NeoPixels process data from the host microcontroller at a fixed data rate; more pixels = more time and lower animation frame rates.
 
+----------------------
+
 ### OLED I2C 128 x 64 (SH1106)
 https://github.com/ThingPulse/esp8266-oled-ssd1306
+
+#### => Setup para la pantallita que tenemos: 1.3' OLED (protocolo I2C (via Wire))
+
+**Se utiliza I2C con Wire (no con brzo_i2c):**
+
+#include `<`Wire.h`>`
+#include "SH1106Wire.h"
+
+**// Include custom images (Este es un archivo aparte, en el mismo directorio, que describe una imagen a partir del seteo HEX de cada pixel)**
+#include "images.h"
+
+
+**// Initialize the OLED display using Wire library
+// En ESP32 NodeMCU, los pines SDA y SCL son
+// 21 -> SDA
+// 22 -> SCL**
+SH1106Wire display(0x3c, 21, 22);
+
+void setup(){
+   display.init();
+}
+
+#### Para usar diferentes tipografias:
+Se deben definir en un Header File aparte.
+1. Generar el fontFile aqui: http://oleddisplay.squix.ch/#/home.
+Parametros: OLED 0.96", Library version: >=3.0.0
+2. Crear un aerchivo "miFont.h" (misma carpeta), y copiar el codigo generado.
+3. Dentro del archivo, reemplazer el tipo de dato en la declaracion. En vez de "char", usar "uint8_t".
+4. En el codigo Principal de Arduino, ingresar el include: #include "miFont.h"
+5. Durante el codigo, usarlo asi: display.setFont(nombreDeLaFont);
+
+
 
 ----------------------
 
